@@ -530,13 +530,13 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("../../img/hello__logo.png") left 101% center no-repeat;
+  background: url("/../../img/hello__logo.png") left 101% center no-repeat;
   background-size: 489px;
   padding-bottom: 70px;
   padding-top: 35px;
 }
 .hero:after {
-  content: url("../../img/bookmark.png");
+  content: url("/../../img/bookmark.png");
   position: absolute;
   bottom: -28px;
   right: 126px;
