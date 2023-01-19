@@ -1,0 +1,121 @@
+$z-fixed-menu: 100;
+
+@font-face {
+	font-family: 'alegreya_sans';
+	src: url('../../fonts/alegreya/alegreyasans-bold-webfont.woff2') format('woff2'),
+			 url('../../fonts/alegreya/alegreyasans-bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'alegreya_sans';
+	src: url('../../fonts/alegreya/alegreyasans-medium-webfont.woff2') format('woff2'),
+			 url('../../fonts/alegreya/alegreyasans-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'play';
+	src: url('../../fonts/play/play-bold-webfont.woff2') format('woff2'),
+			 url('../../fonts/play/play-bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'play';
+	src: url('../../fonts/play/play-regular-webfont.woff2') format('woff2'),
+			 url('../../fonts/play/play-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html {
+	font-family: 'play', Helvetica, sans-serif;
+	line-height: 1.42;
+	color: #666666;
+	background-color: white;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #da0100;
+	transition: 0.4s;
+}
+
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+ }
+
+.button {
+	transition: 0.4s;
+	&:hover {
+		transition: 0.4s;
+	}
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	min-width: 935px;
+	min-width: 100%;
+	flex-direction: column;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100vh;
+	height: 100vh;
+	max-width: 915px;
+}
+
+.logo, .menu__list, .menu, .contact {
+	display: flex;
+}
+
+textarea {
+	resize: none;
+}
+

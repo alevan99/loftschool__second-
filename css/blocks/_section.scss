@@ -1,0 +1,27 @@
+.section {
+	height: 100vh;
+	min-height: 650px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+
+	&__tiltle {
+		font-size: 48px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		color: #292929;
+	}
+}
+
+.headline__tiltle {
+	margin-bottom: 10px;
+}
+
+.headline__subtiltle {
+	text-align: center;
+	padding: 0 20%;
+	margin-bottom: 65px;
+	line-height: 1.25;
+}

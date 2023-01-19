@@ -1,0 +1,109 @@
+
+
+
+.hero {
+	height: 100vh;
+	min-height: 652px;
+	background-color: #F5F5F5;
+	position: relative;
+	color: #292929;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background: url("../../img/hello__logo.png") left 101% center no-repeat;
+		background-size: 489px;
+		padding-bottom: 70px;
+		padding-top: 35px;
+	}
+
+	&:after {
+		content: url("../../img/bookmark.png");
+		position: absolute;
+		bottom: -28px;
+		right: 126px;
+	}
+
+	&__tiltle-section {
+		width: 46%;
+
+	}
+
+	&__tiltle {
+		font-size: 48px;
+		text-transform: uppercase;
+		font-weight: bold;
+    margin-top: -86px;
+    margin-bottom: 33px;
+		line-height: 1;
+	} 
+	&__tiltle-desc {
+		margin-bottom: 50px;
+    line-height: 1.15;
+		font-size: 21px;
+		font-family: 'alegreya_sans', Helvetica, sans-serif;
+	}
+
+	&__list-section {
+		display: flex;
+		align-items: center;
+	}
+
+	&__list-section {
+		width: 58%;
+	}
+
+	&__item-section {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo--ear {
+		width: 41px; height: 41px;
+    background: url("../../img/css_sprites.png") -803px -145px;
+	}
+
+	&__logo--bin {
+		width: 41px; height: 41px;
+    background: url("../../img/css_sprites.png") -145px -145px;
+	}
+
+	&__logo--plug {
+		width: 41px; height: 41px;
+    background: url("../../img/css_sprites.png") -474px -145px;
+	}
+	
+	&__img {
+		min-height: 489px;
+		min-width: 489px;
+	}
+
+	&__item--text {
+		line-height: 1;
+		margin-left: 15px;
+	}
+}
+
+.button {
+
+	font-size: 16px;
+	border-radius: 35px;
+	background-color: #E01F3D;
+	padding: 21px 41px;
+	border-radius: 100px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	border: none;
+
+	&:hover {
+		background-color: #CA1B36;
+		color: white;
+	}
+}
+
+// width: 163px;
+// height: 60px;
+// box-sizing: border-box;
