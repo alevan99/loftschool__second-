@@ -5,7 +5,7 @@
 	justify-content: space-between;
 
 	&:after {
-		content: url("../../img/bookmark2.png");
+		content: url("../img/bookmark2.png");
 		position: absolute;
 		bottom: -1008px;
 		left: 126px;
@@ -15,7 +15,7 @@
 		flex: 1;
 		
 		&:before {
-			content: url("../../img/benefitselement.png");
+			content: url("../img/benefitselement.png");
 			position: absolute;
 			top: 30px;
 			right: 0;

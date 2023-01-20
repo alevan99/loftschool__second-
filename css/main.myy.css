@@ -536,7 +536,7 @@ textarea {
   padding-top: 35px;
 }
 .hero:after {
-  content: url("../../img/bookmark.png");
+  content: url("../img/bookmark.png");
   position: absolute;
   bottom: -28px;
   right: 126px;
@@ -580,17 +580,17 @@ textarea {
 .hero__logo--ear {
   width: 41px;
   height: 41px;
-  background: url("../../img/css_sprites.png") -803px -145px;
+  background: url("../img/css_sprites.png") -803px -145px;
 }
 .hero__logo--bin {
   width: 41px;
   height: 41px;
-  background: url("../../img/css_sprites.png") -145px -145px;
+  background: url("../img/css_sprites.png") -145px -145px;
 }
 .hero__logo--plug {
   width: 41px;
   height: 41px;
-  background: url("../../img/css_sprites.png") -474px -145px;
+  background: url("../img/css_sprites.png") -474px -145px;
 }
 .hero__img {
   min-height: 489px;
@@ -660,7 +660,7 @@ textarea {
           justify-content: space-between;
 }
 .benefits:after {
-  content: url("../../img/bookmark2.png");
+  content: url("../img/bookmark2.png");
   position: absolute;
   bottom: -1008px;
   left: 126px;
@@ -671,7 +671,7 @@ textarea {
           flex: 1;
 }
 .benefits__item:before {
-  content: url("../../img/benefitselement.png");
+  content: url("../img/benefitselement.png");
   position: absolute;
   top: 30px;
   right: 0;
@@ -936,7 +936,7 @@ textarea {
 }
 .radio--checkbox .radio__visible:before {
   content: "";
-  background: url("../../img/checkbox.png") center center no-repeat;
+  background: url("../img/checkbox.png") center center no-repeat;
 }
 
 .button--transparent {
