@@ -669,20 +669,26 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  position: relative;
+  padding: 0 3%;
 }
 .benefits__item:before {
   content: url("../img/benefitselement.png");
   position: absolute;
-  top: 30px;
+  top: 50px;
+  left: 92%;
   right: 0;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
 .benefits__item:first-child {
-  margin-left: 0px;
+  padding-left: 0px;
 }
 .benefits__item:last-child {
-  margin-right: 0px;
+  padding-right: 0px;
+}
+.benefits__item:last-child:before {
+  display: none;
 }
 .benefits__wrapper {
   display: inline-block;

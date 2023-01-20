@@ -13,21 +13,28 @@
 
 	&__item {
 		flex: 1;
+		position: relative;
+		padding: 0 3%;
 		
 		&:before {
 			content: url("../img/benefitselement.png");
 			position: absolute;
-			top: 30px;
+			top: 50px;
+			left: 92%;
 			right: 0;
 			transform: translate(-50%);
 		}
 
 		&:first-child {
-			margin-left: 0px;
+			padding-left: 0px;
 		}
 
 		&:last-child {
-			margin-right: 0px;
+			padding-right: 0px;
+			
+			&:before {
+				display: none;
+			}
 		}
 	}
 
