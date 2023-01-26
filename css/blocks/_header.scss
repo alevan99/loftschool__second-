@@ -4,16 +4,17 @@
 	align-items: center;
 }
 
+
 .menu {
 	&__item {
-		margin-right: 8px;
+		margin-right: rem(14px);
 		&:last-child {
-			margin-right: 0px;
+			margin-right: rem(0px);
 		}
 	}
 	&__link {
 		color: black;
-		font-size: 18px;
+		font-size: rem(18px);
 		font-family: 'alegreya_sans', Helvetica, sans-serif;
 	}	
 }
@@ -21,8 +22,8 @@
 .logo {
 
 	&__img {
-		width: 40px;
-		height: 40px;
+		width: rem(40px);
+		height: rem(40px);
 	}
 
 }
@@ -33,15 +34,60 @@
 	color: #292929;
 	
 		&__img {
-			width: 14px;
-			height: 14px;
+			width: rem(14px);
+			height: rem(14px);
+
+			@include tablets {
+				color: #E01F3D;
+				
+			}
+			@include phones {
+				color: #292929;
+			}
 		}
 
 		&__phone {
 			font-family: 'play', Helvetica, sans-serif;
 			font-style: normal;
-			font-size: 18px;
-			margin-left: 6px;
+			font-size: rem(18px);
+			margin-left: rem(6px);
+			@include tablets {
+				color: #E01F3D;
+			}
+			@include phones {
+				color: #292929;
+			}
 		}
 	
+}
+
+.menu__list {
+	flex-wrap: wrap;
+}
+
+.menu__link {
+	white-space: nowrap;
+}
+
+.header__phone-number {
+	flex-shrink: 0;
+}
+
+.contact__phone {
+	white-space: nowrap;
+}
+
+.header {
+	align-items: flex-start;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+}
+
+.menu, .contact.header__phone-number {
+	@include tablets {
+		display: none;
+	}
 }

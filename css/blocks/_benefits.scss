@@ -4,33 +4,56 @@
 	display: flex;
 	justify-content: space-between;
 
+	@include phones {
+		flex-direction: column;
+		padding-left: 3%;
+	}
+
 	&:after {
 		content: url("../img/bookmark2.png");
 		position: absolute;
-		bottom: -1008px;
-		left: 126px;
+		bottom: rem(-1008px);
+		left: rem(126px);
+
+		@include tablets {
+			bottom: -67.5rem;
+		}
+
+		@include phones {
+			bottom: -67.5rem;
+		}
 	}
 
 	&__item {
 		flex: 1;
 		position: relative;
 		padding: 0 3%;
+
+		@include phones {
+			padding: 0;
+			margin-bottom: rem(22px);
+		}
 		
 		&:before {
 			content: url("../img/benefitselement.png");
 			position: absolute;
-			top: 50px;
+			top: rem(50px);
 			left: 92%;
 			right: 0;
 			transform: translate(-50%);
+
+			@include tablets {
+				display: none;
+			}
+			
 		}
 
 		&:first-child {
-			padding-left: 0px;
+			padding-left: rem(0px);
 		}
 
 		&:last-child {
-			padding-right: 0px;
+			padding-right: rem(0px);
 			
 			&:before {
 				display: none;
@@ -40,28 +63,34 @@
 
 	&__wrapper {
 		display: inline-block;
-		width: 126px;
-		height: 126px;
+		width: rem(126px);
+		height: rem(126px);
 		position: relative;
 		background: #F2F5F4;
 		border-radius: 50%;
 		overflow: hidden;
+
 	}
 
 	&__img {
-		height: 60px;
+		height: rem(60px);
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+
 	}
 
 	&__text {
-		margin-top: 14px;
+		margin-top: rem(14px);
+		@include phones {
+			margin-top: rem(0px);
+			margin-left: rem(32px);
+		}
 	}
 
 	&__tiltle {
-		font-size: 24px;
+		font-size: rem(24px);
 		font-weight: bold;
 		color: black;
 	}
@@ -69,12 +98,26 @@
 	&__desc {
 		line-height: 1.2;
 		padding: 0 3%;
-		margin-top: 6px;
+		margin-top: rem(6px);
+		@include phones {
+			padding: 0;
+			margin-bottom: rem(48px);
+		}
 	}
 
 }
 
 .benefit {
 	text-align: center;
+	@include phones {
+		display: flex;
+		text-align: left;
+	}
 }
 
+
+.benefits__item:before {
+	@include tablets {
+		display: none;
+	}
+}

@@ -1,0 +1,101 @@
+.contacts {
+	height: 100vh;
+}
+
+.contacts__logo {
+	background: url("../img/map.png") center center / cover no-repeat;
+	height: 90vh;
+	@include phones {
+		height: 80vh;
+	}
+}
+
+.contacts__content {
+	margin: 0 auto;
+	width: 95%;
+	max-width: $containerwidth;
+	display: flex;
+	justify-content: space-between;
+
+	@include phones {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.contacts__adress {
+	margin-top: rem(16px);
+	@include phones {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.local__text {
+	font-size: rem(18px);
+
+	@include tablets {
+		font-size: rem(22px);
+	}
+
+	@include phones {
+		font-size: rem(18px);
+		margin-bottom: rem(8px);
+	}
+}
+
+.socials {
+	margin-top: rem(24px);
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: rem(10px);
+
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+}
+
+
+.bg {
+	&-vk {
+		width: 30px; height: 30px;
+    background: url("../img/socials-sprite.png") -60px -60px;
+		@include phones {
+			width: 24px; height: 24px;
+			background: url("../img/socials-sprite2.png") -54px -54px;
+		}
+	}
+	&-f {
+		width: 30px; height: 30px;
+    background: url("../img/socials-sprite.png") -10px -60px;
+		filter: grayscale(1);
+		@include phones {
+			width: 24px; height: 24px;
+			background: url("../img/socials-sprite2.png") -54px -10px;
+		}
+	}
+	&-in {
+		width: 30px; height: 30px;
+    background: url("../img/socials-sprite.png") -60px -10px;
+		@include phones {
+			width: 24px; height: 24px;
+			background: url("../img/socials-sprite2.png") -10px -10px;
+		}
+	}
+	&-tg {
+		width: 30px; height: 30px;
+    background: url("../img/socials-sprite.png") -10px -10px;
+		@include phones {
+			width: 24px; height: 24px;
+			background: url("../img/socials-sprite2.png") -10px -54px;
+		}
+	}
+}
+

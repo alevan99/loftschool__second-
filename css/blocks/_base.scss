@@ -1,4 +1,4 @@
-$z-fixed-menu: 100;
+
 
 @font-face {
 	font-family: 'alegreya_sans';
@@ -32,12 +32,23 @@ $z-fixed-menu: 100;
 	font-style: normal;
 }
 
-body, html {
+html {
+	font-size: $basefontsize;
+
+	@include tablets {
+		font-size: $basefontsize - 1px;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
 	font-family: 'play', Helvetica, sans-serif;
 	line-height: 1.42;
 	color: #666666;
 	background-color: white;
-	height: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin: 0;
@@ -99,16 +110,15 @@ button {
 .wrapper {
 	overflow: hidden;
 	min-height: 100%;
-	min-width: 935px;
 	min-width: 100%;
 	flex-direction: column;
 }
 
 .container {
 	margin: 0 auto;
-	width: 100vh;
+	width: 95%;
 	height: 100vh;
-	max-width: 915px;
+	max-width: $containerwidth;
 }
 
 .logo, .menu__list, .menu, .contact {
