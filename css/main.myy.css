@@ -547,7 +547,7 @@ template {
 }
 
 .menu__item {
-  margin-right: 0.875rem;
+  margin-right: 0.75rem;
 }
 .menu__item:last-child {
   margin-right: 0rem;
