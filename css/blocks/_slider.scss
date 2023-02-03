@@ -13,6 +13,10 @@
 		margin-top: 21%;
 		margin-left: 17%;
 	}
+	@include phones {
+		margin-top: 29%;
+		margin-left: 0%;
+	}
 }
 
 .slider__arrow--next {
@@ -25,6 +29,10 @@
 	@include tablets {
 		margin-top: 20.5%;
 		margin-left: 79%;
+	}
+	@include phones {
+		margin-top: 29%;
+		margin-left: 95%;
 	}
 }
 
@@ -87,6 +95,10 @@
 			margin-top: rem(118px);
 			margin-bottom: rem(8px);
 		}
+		@include tablets {
+			padding: 0 5%;
+			margin-top: rem(96px);
+		}
 	}
 
 	&__desc {
@@ -94,6 +106,9 @@
 		@include tablets {
 			font-size: 16px;
 			padding: 0 2%;
+		}
+		@include tablets {
+			padding: 0;
 		}
 	}
 
@@ -105,6 +120,10 @@
 		@include tablets {
 			margin-top: rem(26px);
 			margin-bottom: rem(20px);
+			@include tablets {
+				margin-top: rem(14px);
+				margin-bottom: rem(24px);
+			}
 		}
 	}
 
