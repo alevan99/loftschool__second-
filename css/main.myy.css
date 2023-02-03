@@ -25,11 +25,6 @@
 html {
   font-size: 16px;
 }
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 15px;
-  }
-}
 
 html, body {
   height: 100%;
@@ -855,7 +850,7 @@ template {
 }
 @media screen and (max-width: 768px) {
   .benefits:after {
-    bottom: -67.5rem;
+    bottom: -62.625rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1122,7 +1117,7 @@ template {
 }
 @media screen and (max-width: 768px) {
   .reviews__container:after {
-    bottom: -133.5rem;
+    bottom: -125.250rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1502,6 +1497,58 @@ template {
   }
 }
 
+.slider__arrows {
+  position: relative;
+}
+
+.slider__arrow--prev {
+  position: absolute;
+  background: url("../img/arrow__prev.png") center center no-repeat;
+  width: 1.5rem;
+  height: 2.5rem;
+  margin-top: 22.5%;
+  margin-left: -5.5%;
+}
+@media screen and (max-width: 768px) {
+  .slider__arrow--prev {
+    margin-top: 21%;
+    margin-left: 17%;
+  }
+}
+
+.slider__arrow--next {
+  position: absolute;
+  background: url("../img/arrow__next.png") center center no-repeat;
+  width: 1.5rem;
+  height: 2.5rem;
+  margin-top: 22.5%;
+  margin-left: 99.5%;
+}
+@media screen and (max-width: 768px) {
+  .slider__arrow--next {
+    margin-top: 20.5%;
+    margin-left: 79%;
+  }
+}
+
+.slider-main {
+  margin-top: -4.25rem;
+}
+@media screen and (max-width: 768px) {
+  .slider-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 .slider__container {
   background-color: #F8FAF9;
 }
@@ -1516,20 +1563,76 @@ template {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .slider__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .slider__logo {
-  min-width: 28.25rem;
+  width: 28.25rem;
   height: 28.25rem;
+  margin-right: 3.625rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media screen and (max-width: 768px) {
+  .slider__logo {
+    max-width: 19.125rem;
+    max-height: 19.125rem;
+    margin-right: 0;
+  }
 }
 .slider-img {
   width: 100%;
 }
 .slider__tiltle {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
   text-transform: uppercase;
-  font-size: 2.25rem;
+  font-size: 36px;
   font-weight: bold;
   color: black;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .slider__tiltle {
+    font-size: 28px;
+    margin-top: 7.375rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.slider__desc {
+  width: 90%;
+}
+@media screen and (max-width: 768px) {
+  .slider__desc {
+    font-size: 16px;
+    padding: 0 2%;
+  }
 }
 .slider__features {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .slider__features {
+    margin-top: 1.625rem;
+    margin-bottom: 1.25rem;
+  }
+}
+.slider__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1538,8 +1641,45 @@ template {
           align-items: center;
 }
 
+.features-one {
+  margin-right: 5.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.features-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
 .features__desc {
+  font-size: 18px;
   font-weight: bold;
+}
+
+.price__text {
+  color: black;
+  font-size: 36px;
+  margin-right: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .price__text {
+    margin-right: 2.25rem;
+  }
 }
 
 .dropdown__list {
@@ -1642,4 +1782,10 @@ template {
   width: 24px;
   height: 24px;
   background: url("../img/dropdown__sprites.png") -98px -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown {
+    display: none;
+  }
 }

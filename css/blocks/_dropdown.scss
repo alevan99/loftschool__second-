@@ -94,3 +94,9 @@
     background: url("../img/dropdown__sprites.png") -98px -10px;
 	}
 }
+
+.dropdown { 
+	@include tablets {
+		display: none;
+	}
+}

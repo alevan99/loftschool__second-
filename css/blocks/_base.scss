@@ -36,7 +36,7 @@ html {
 	font-size: $basefontsize;
 
 	@include tablets {
-		font-size: $basefontsize - 1px;
+		// font-size: $basefontsize - 1px;
 	}
 }
 

@@ -1,4 +1,45 @@
+.slider__arrows {
+	position: relative;
+}
+
+.slider__arrow--prev {
+	position: absolute;
+	background: url("../img/arrow__prev.png") center center no-repeat;
+	width: rem(24px);
+	height: rem(40px);
+	margin-top: 22.5%;
+	margin-left: -5.5%;
+	@include tablets {
+		margin-top: 21%;
+		margin-left: 17%;
+	}
+}
+
+.slider__arrow--next {
+	position: absolute;
+	background: url("../img/arrow__next.png") center center no-repeat;
+	width: rem(24px);
+	height: rem(40px);
+	margin-top: 22.5%;
+	margin-left: 99.5%;
+	@include tablets {
+		margin-top: 20.5%;
+		margin-left: 79%;
+	}
+}
+
 .slider {
+
+	&-main {
+		margin-top: rem(-68px);
+		@include tablets {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
 	&__container {
 		background-color: #F8FAF9;
 	}
@@ -7,25 +48,67 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@include tablets {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	&__logo {
-		min-width: rem(452px);
+		width: rem(452px);
 		height: rem(452px);
+		margin-right: rem(58px);
+		flex-shrink: 0;
+
+		@include tablets {
+			max-width: rem(306px);
+			max-height: rem(306px);
+			margin-right: 0;
+		}
 	}
 
 	&-img {
 		width: 100%;
+		
 	}
 
 	&__tiltle {
+		margin-top: rem(16px);
+		margin-bottom: rem(20px);
 		text-transform: uppercase;
-		font-size: rem(36px);
+		font-size: 36px;
 		font-weight: bold;
 		color: black;
+		line-height: 1.2;
+
+		@include tablets {
+			font-size: 28px;
+			margin-top: rem(118px);
+			margin-bottom: rem(8px);
+		}
+	}
+
+	&__desc {
+		width: 90%;
+		@include tablets {
+			font-size: 16px;
+			padding: 0 2%;
+		}
 	}
 
 	&__features {
+		margin-top: rem(16px);
+		margin-bottom: rem(16px);
+		display: flex;
+		align-items: center;
+		@include tablets {
+			margin-top: rem(26px);
+			margin-bottom: rem(20px);
+		}
+	}
+
+	&__buttons {
 		display: flex;
 		align-items: center;
 	}
@@ -35,9 +118,30 @@
 
 .features {
 
+	&-one {
+		margin-right: rem(86px);
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+	}
 
+	&-second {
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+	}
 
 	&__desc {
+		font-size: 18px;
 		font-weight: bold;
+	}
+}
+
+.price__text {
+	color: black;
+	font-size: 36px;
+	margin-right: rem(24px);
+	@include tablets {
+		margin-right: rem(36px);
 	}
 }
