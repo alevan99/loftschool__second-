@@ -26,3 +26,18 @@ humburgerMenu.addEventListener("click", e => {
 	}
 });
 
+
+/////////////////////////////////////////////
+
+const interactiveLink = document.querySelector(".interactive-avatar");
+
+interactiveLink.addEventListener("click", (e) => {
+	e.preventDefault();
+})
+
+
+
+// $(".interactive-avatar__link").click(e => {
+// 	e.preventDefault();
+
+// })
