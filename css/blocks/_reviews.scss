@@ -118,14 +118,7 @@
 	margin-right: rem(8px);
 	position: relative;
 
-	&:hover {
-		border-color: #E01F3D;
-		border: rem(4px) solid transparent;
-	}
 
-	&--active {
-		border-color: #E01F3D;
-	}
 		&__link {
 			position: absolute;
 			top: 0;
@@ -141,6 +134,10 @@
 			height: 100%;
 			object-fit: cover;
 		}
+}
+
+.interactive-avatar.active {
+	border-color: #E01F3D;
 }
 
 .reviews__container {
