@@ -2,6 +2,12 @@
 	margin-top: rem(52px);
 }
 
+.team__section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 
 .team--version--desktop .team__content {
 	position: absolute;

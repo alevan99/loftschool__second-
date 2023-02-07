@@ -7,15 +7,15 @@
 	background: url("../img/arrow__prev.png") center center no-repeat;
 	width: rem(24px);
 	height: rem(40px);
-	margin-top: 22.5%;
+	margin-top: 50.5%;
 	margin-left: -5.5%;
 	@include tablets {
-		margin-top: 21%;
+		margin-top: 50%;
 		margin-left: 17%;
 	}
 	@include phones {
-		margin-top: 29%;
-		margin-left: 0%;
+		margin-top: 72%;
+		margin-left: 3%;
 	}
 }
 
@@ -24,15 +24,15 @@
 	background: url("../img/arrow__next.png") center center no-repeat;
 	width: rem(24px);
 	height: rem(40px);
-	margin-top: 22.5%;
+	margin-top: 50.5%;
 	margin-left: 99.5%;
 	@include tablets {
-		margin-top: 20.5%;
+		margin-top: 50.5%;
 		margin-left: 79%;
 	}
 	@include phones {
-		margin-top: 29%;
-		margin-left: 95%;
+		margin-top: 72%;
+		margin-left: 92%;
 	}
 }
 
@@ -60,6 +60,7 @@
 		@include tablets {
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 		}
 	}
 
@@ -163,4 +164,21 @@
 	@include tablets {
 		margin-right: rem(36px);
 	}
+}
+
+
+
+.slider {
+	display: flex;
+	overflow: hidden;
+	height: inherit;
+}
+
+.slider__list {
+	display: -webkit-box;
+	min-width: 5rem;
+}
+
+.slider__item {
+	display: flex;
 }
