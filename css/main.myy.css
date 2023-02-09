@@ -2058,7 +2058,20 @@ template {
   color: red;
 }
 .modal.fancybox-content {
-  padding: 0 !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal .fancybox-button {
+  position: absolute;
+  top: 43%;
+  left: 60%;
 }
 
 .modal__container {
@@ -2074,9 +2087,16 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal__content {
-  margin-bottom: 15px;
+  margin-bottom: 32px;
   color: #000;
+}
+
+.form__input.input-error {
+  border-color: hotpink;
 }
