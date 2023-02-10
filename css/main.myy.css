@@ -915,12 +915,12 @@ template {
 }
 @media screen and (max-width: 768px) {
   .benefits:after {
-    bottom: -62.625rem;
+    bottom: -76.625rem;
   }
 }
 @media screen and (max-width: 480px) {
   .benefits:after {
-    bottom: -63rem;
+    bottom: -76.625rem;
   }
 }
 .benefits__item {
@@ -1183,12 +1183,12 @@ template {
 }
 @media screen and (max-width: 768px) {
   .reviews__container:after {
-    bottom: -125.250rem;
+    bottom: -152rem;
   }
 }
 @media screen and (max-width: 480px) {
   .reviews__container:after {
-    bottom: -125rem;
+    bottom: -152rem;
   }
 }
 
@@ -2099,4 +2099,71 @@ template {
 
 .form__input.input-error {
   border-color: hotpink;
+}
+
+.colors {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colors__tiltle {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.colors-acco__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.colors-acco__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 100%;
+}
+
+.colors-acco__link {
+  position: relative;
+  width: 6.875rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.colors-acco__tiltle {
+  color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  -webkit-transform: rotate(-90deg) translate(-50%, -50%);
+          transform: rotate(-90deg) translate(-50%, -50%);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  white-space: nowrap;
+}
+
+.colors-acco__content {
+  width: 0px;
+  -webkit-transition: width	.4s;
+  transition: width	.4s;
+  padding: 0px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.colors-acco__item-active .colors-acco__content {
+  width: 300px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 1;
+  z-index: 1000;
 }

@@ -1,0 +1,63 @@
+.colors__container {
+	// background: url("../img/bg__acco.png") center center / cover
+}
+
+.colors {
+	position: relative;
+	display: flex;
+	
+}
+
+.colors__tiltle {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+
+}
+
+.colors-acco__list {
+	display: flex;
+	height: 100%;
+	justify-content: flex-end;
+}
+
+.colors-acco__item {
+	display: flex;
+	cursor: pointer;
+	height: 100%;
+}
+
+.colors-acco__link {
+	position: relative;
+	width: rem(110px);
+
+	background-color: rgba(0, 0, 0, .5);
+
+}
+
+.colors-acco__tiltle {
+	color: white;
+	position: absolute;
+	left: 50%;
+	bottom: 70px;
+	transform: rotate(-90deg) translate(-50%, -50%);
+
+	transform-origin: 0 0;
+	white-space: nowrap;
+}
+
+.colors-acco__content {
+	width: 0px;
+	transition: width	.4s;
+	padding: 0px;
+	opacity: 1;
+	overflow: hidden;
+}
+
+.colors-acco__item-active .colors-acco__content {
+	width: 300px;
+	padding: 20px;
+	box-sizing: border-box;
+	opacity: 1;
+	z-index: 1000;
+}
