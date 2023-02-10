@@ -22,6 +22,16 @@
 		position: absolute;
 		top: 43%;
     left: 60%;
+
+		@include tablets {
+			top: 42%;
+    	left: 66%;
+		}
+
+		@include phones {
+			top: 42%;
+    	left: 75%;
+		}
 	}
 }
 

@@ -1,5 +1,5 @@
 .colors__container {
-	// background: url("../img/bg__acco.png") center center / cover
+	background: url("../img/bg__acco.png") center center / cover
 }
 
 .colors {
@@ -10,9 +10,9 @@
 
 .colors__tiltle {
 	position: absolute;
-	top: 20%;
-	left: 20%;
-
+	top: 15%;
+	left: 10%;
+	color: white;
 }
 
 .colors-acco__list {
@@ -29,18 +29,30 @@
 
 .colors-acco__link {
 	position: relative;
-	width: rem(110px);
-
+	width: 7vw;
 	background-color: rgba(0, 0, 0, .5);
+}
 
+.colors-acco__link--gray {
+	background-color: #999999;
+}
+
+.colors-acco__link--black {
+	background-color: #151515;
+}
+
+.colors-acco__link--red {
+	background-color: #E01F3C;
 }
 
 .colors-acco__tiltle {
 	color: white;
 	position: absolute;
 	left: 50%;
-	bottom: 70px;
+	bottom: 170px;
 	transform: rotate(-90deg) translate(-50%, -50%);
+	font-size: 36px;
+	font-weight: bold;
 
 	transform-origin: 0 0;
 	white-space: nowrap;
@@ -52,10 +64,12 @@
 	padding: 0px;
 	opacity: 1;
 	overflow: hidden;
+	color: white;
+	background: rgba(51, 53, 55, 0.9);
 }
 
 .colors-acco__item-active .colors-acco__content {
-	width: 300px;
+	width: 45vw;
 	padding: 20px;
 	box-sizing: border-box;
 	opacity: 1;

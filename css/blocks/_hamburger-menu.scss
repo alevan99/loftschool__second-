@@ -40,8 +40,13 @@
 	margin-top: -125%;
 	position: absolute;
 
-@include phones {
-	margin-left: 85%;
-	margin-top: -190%;
-}
+	@include tablets {
+		margin-left: 90%;
+		margin-top: -108%;
+	}
+
+	@include phones {
+		margin-left: 85%;
+		margin-top: -175%;
+	}
 }

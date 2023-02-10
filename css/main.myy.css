@@ -527,10 +527,16 @@ template {
   margin-top: -125%;
   position: absolute;
 }
+@media screen and (max-width: 768px) {
+  .cross__logo {
+    margin-left: 90%;
+    margin-top: -108%;
+  }
+}
 @media screen and (max-width: 480px) {
   .cross__logo {
     margin-left: 85%;
-    margin-top: -190%;
+    margin-top: -175%;
   }
 }
 
@@ -915,12 +921,12 @@ template {
 }
 @media screen and (max-width: 768px) {
   .benefits:after {
-    bottom: -62.625rem;
+    bottom: -57.625rem;
   }
 }
 @media screen and (max-width: 480px) {
   .benefits:after {
-    bottom: -62.625rem;
+    bottom: -57.625rem;
   }
 }
 .benefits__item {
@@ -1183,12 +1189,12 @@ template {
 }
 @media screen and (max-width: 768px) {
   .reviews__container:after {
-    bottom: -125rem;
+    bottom: -114rem;
   }
 }
 @media screen and (max-width: 480px) {
   .reviews__container:after {
-    bottom: -125rem;
+    bottom: -114rem;
   }
 }
 
@@ -2073,6 +2079,18 @@ template {
   top: 43%;
   left: 60%;
 }
+@media screen and (max-width: 768px) {
+  .modal .fancybox-button {
+    top: 42%;
+    left: 66%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal .fancybox-button {
+    top: 42%;
+    left: 75%;
+  }
+}
 
 .modal__container {
   background: white;
@@ -2101,6 +2119,10 @@ template {
   border-color: hotpink;
 }
 
+.colors__container {
+  background: url("../img/bg__acco.png") center center/cover;
+}
+
 .colors {
   position: relative;
   display: -webkit-box;
@@ -2110,8 +2132,9 @@ template {
 
 .colors__tiltle {
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 15%;
+  left: 10%;
+  color: white;
 }
 
 .colors-acco__list {
@@ -2134,17 +2157,31 @@ template {
 
 .colors-acco__link {
   position: relative;
-  width: 6.875rem;
+  width: 7vw;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.colors-acco__link--gray {
+  background-color: #999999;
+}
+
+.colors-acco__link--black {
+  background-color: #151515;
+}
+
+.colors-acco__link--red {
+  background-color: #E01F3C;
 }
 
 .colors-acco__tiltle {
   color: white;
   position: absolute;
   left: 50%;
-  bottom: 70px;
+  bottom: 170px;
   -webkit-transform: rotate(-90deg) translate(-50%, -50%);
           transform: rotate(-90deg) translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   white-space: nowrap;
@@ -2157,10 +2194,12 @@ template {
   padding: 0px;
   opacity: 1;
   overflow: hidden;
+  color: white;
+  background: rgba(51, 53, 55, 0.9);
 }
 
 .colors-acco__item-active .colors-acco__content {
-  width: 300px;
+  width: 45vw;
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
