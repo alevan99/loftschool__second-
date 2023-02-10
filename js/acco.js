@@ -4,6 +4,7 @@ for (let index = 0; index < lines.length; index++) {
 	const element = lines[index]
 	element.addEventListener("click", e => {
 		e.preventDefault();
+		if (e.target.classList.contains("colors-acco__content")) return
 		const currentLine = e.target.closest(".colors-acco__item");
 
 		for (let i = 0; i < lines.length; i++) {

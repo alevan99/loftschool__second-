@@ -915,12 +915,12 @@ template {
 }
 @media screen and (max-width: 768px) {
   .benefits:after {
-    bottom: -76.625rem;
+    bottom: -62.625rem;
   }
 }
 @media screen and (max-width: 480px) {
   .benefits:after {
-    bottom: -76.625rem;
+    bottom: -62.625rem;
   }
 }
 .benefits__item {
@@ -1183,12 +1183,12 @@ template {
 }
 @media screen and (max-width: 768px) {
   .reviews__container:after {
-    bottom: -152rem;
+    bottom: -125rem;
   }
 }
 @media screen and (max-width: 480px) {
   .reviews__container:after {
-    bottom: -152rem;
+    bottom: -125rem;
   }
 }
 
