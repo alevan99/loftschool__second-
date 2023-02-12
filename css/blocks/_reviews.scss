@@ -146,14 +146,14 @@
 		content: url("../img/bookmark3.png");
 		position: absolute;
 		bottom: -125rem;
-		left: 11.5rem;
+		left: 15%;
 
 		@include tablets {
-			bottom: -114rem;
+			bottom: -310.5rem;
 		}
 
 		@include phones {
-			bottom: -114rem;
+			bottom: -310.5rem;
 		}
 	}
 }

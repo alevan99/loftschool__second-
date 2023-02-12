@@ -50,6 +50,8 @@
 
 	&__container {
 		background-color: #F8FAF9;
+
+		
 	}
 
 	&__content {
@@ -181,4 +183,21 @@
 
 .slider__item {
 	display: flex;
+}
+
+.slider__container {
+	&:after {
+		content: url("../img/slider__decoration.png");
+		position: absolute;
+		bottom: -125rem;;
+		left: 88%;
+
+		@include tablets {
+			bottom: -125.5rem;
+		}
+
+		@include phones {
+			bottom: -125.5rem;
+		}
+}
 }

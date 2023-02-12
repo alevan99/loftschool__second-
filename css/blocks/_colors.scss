@@ -1,5 +1,9 @@
 .colors__container {
-	background: url("../img/bg__acco.png") center center / cover
+	background: url("../img/bg__acco.png") center center / cover;
+
+	@include phones {
+		background: url("../img/bg__acco.png") left 70% center / cover;
+	}
 }
 
 .colors {
@@ -29,6 +33,7 @@
 
 .colors-acco__link {
 	position: relative;
+	min-width: 70px;
 	width: 7vw;
 	background-color: rgba(0, 0, 0, .5);
 }
@@ -74,4 +79,12 @@
 	box-sizing: border-box;
 	opacity: 1;
 	z-index: 1000;
+
+	@include tablets {
+		width: 73vw;
+	}
+
+	@include phones {
+		width: 56vw;
+	}
 }
