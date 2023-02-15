@@ -1,0 +1,28 @@
+$z-fixed-menu: 100;
+$containerwidth: 915px; 
+$basefontsize: 16px; 
+
+$tablets: 768px;
+$phones: 480px;
+
+// @import "blocks/*.scss";
+
+@import "blocks/_media.scss";
+@import "blocks/_base.scss";
+// @import "blocks/_normalize.scss";
+@import "blocks/_hamburger-menu.scss";
+@import "blocks/_header.scss";
+@import "blocks/_hamburger.scss";
+@import "blocks/_hero.scss";
+@import "blocks/_section.scss";
+@import "blocks/_benefits.scss";
+@import "blocks/_reviews.scss";
+@import "blocks/_form.scss";
+@import "blocks/_fixed-menu.scss";
+@import "blocks/_contacts.scss";
+@import "blocks/_slider.scss";
+@import "blocks/_dropdown.scss";
+@import "blocks/_team.scss";
+@import "blocks/_modal.scss";
+@import "blocks/_colors.scss";
+@import "blocks/_player.scss";

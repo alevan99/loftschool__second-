@@ -1,3 +1,9 @@
+$z-fixed-menu: 100;
+$containerwidth: 915px; 
+$basefontsize: 16px; 
+
+$tablets: 768px;
+$phones: 480px;
 
 @function rem($px) {
 	@return $px / $basefontsize + 0rem
