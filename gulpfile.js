@@ -82,6 +82,11 @@ task('copy:fonts', () => {
 	.pipe(dest("dist/fonts"))
 })
 
+task('copy:libs', () => {
+	return src("libs/**/*.*")
+	.pipe(dest("dist/libs"))
+})
+
 task('server', () => {
 	browserSync.init({
 			server: {
@@ -100,7 +105,7 @@ task('watch', () => {
 
 task("default", 
 	series("clean", 
-	parallel("copy:html", "styles", "scripts", "icons", "copy:img", "copy:fonts"), 
+	parallel("copy:html", "styles", "scripts","copy:libs", "icons", "copy:img", "copy:fonts"), 
 	parallel("watch", "server")
 	)
 );
