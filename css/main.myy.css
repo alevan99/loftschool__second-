@@ -85,7 +85,7 @@ button {
 .container {
   margin: 0 auto;
   width: 95%;
-  height: 100vh;
+  height: 100%;
   max-width: 57.25rem; }
 
 .logo, .menu__list, .menu, .contact {
@@ -687,10 +687,10 @@ template {
     left: 7.875rem; }
     @media screen and (max-width: 768px) {
       .benefits:after {
-        bottom: -63.250rem; } }
+        bottom: -57.5rem; } }
     @media screen and (max-width: 480px) {
       .benefits:after {
-        bottom: -63.250rem; } }
+        bottom: -57.5rem; } }
   .benefits__item {
     flex: 1;
     position: relative;
@@ -872,10 +872,10 @@ template {
   left: 15%; }
   @media screen and (max-width: 768px) {
     .reviews__container:after {
-      bottom: -310.5rem; } }
+      bottom: -283.5rem; } }
   @media screen and (max-width: 480px) {
     .reviews__container:after {
-      bottom: -310.5rem; } }
+      bottom: -283.5rem; } }
 
 .reviews__list {
   position: relative;
@@ -1284,10 +1284,10 @@ template {
   left: 88%; }
   @media screen and (max-width: 768px) {
     .slider__container:after {
-      bottom: -125.5rem; } }
+      bottom: -124rem; } }
   @media screen and (max-width: 480px) {
     .slider__container:after {
-      bottom: -125.5rem; } }
+      bottom: -124rem; } }
 
 .dropdown__list {
   padding: 28px; }
