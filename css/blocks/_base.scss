@@ -120,6 +120,9 @@ button {
 	width: 95%;
 	height: 100%;
 	max-width: rem(916px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .logo, .menu__list, .menu, .contact {
