@@ -103,6 +103,7 @@
 		console.log(reqSection.index())
 	});
 
+
 	if(isMobile) {
 		$("body").swipe( {
 			swipe:function(event, direction,) {
